@@ -1,0 +1,81 @@
+<aside id="fh5co-hero">
+    <div class="hero-banner jumbotron jumbotron-fluid">
+        
+        <video autoplay muted loop>    
+            <source src="" data-src="images/guitar.mov" type="video/mp4">
+            </video>
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <div class="desc">
+                    <p>One of the simplest but important components of good mental health: Having a hobby that one is passionate about. Hobbies have been shown to be beneficial in terms of mental health by lowering stress, opening social connections, improving work performance, etc. but most importantly: Increasing happiness.</p>
+                        <hr>
+                    
+                    <h2><a href="/hobbies" class="btn btn-primary btn-outline btn-lg">Hobby Central</a></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</aside>
+
+<div id="fh5co-services" class="fh5co-bg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 text-center">
+                <a href="/hobbies/category/Music">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-music-note"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Music</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                <a href="/hobbies/category/Life">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-quality-of-life"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Life</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                <a href="/hobbies/category/Art">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-art"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Art</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                <a href="/hobbies/category/Science">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-microscope"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Science</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fh5co-started">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Featured Hobbies</h2>
+            </div>
+        </div>
+        <div class="row">
+        {{#each hobbies as |hobby|}}
+        {{> hobby-info hobby }}
+        {{/each}}
+        </div>
+    </div>
+</div>
