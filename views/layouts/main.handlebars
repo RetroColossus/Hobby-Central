@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hobby Central</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+</head>
+
+<body>
+
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div id="fh5co-logo"><a href="/">Hobby Central</a></div>
+                    </div>
+                    <div class="col-md-8 col-xs-6 text-right menu-1">
+                        <ul>
+                            <li class="has-dropdown">
+                                <a href="/hobbies">Hobbies</a>
+                                <ul class="dropdown">
+                                    <li><a href="/hobbies/category/Music">Music</a></li>
+                                    <li><a href="/hobbies/category/Life">Life</a></li>
+                                    <li><a href="/hobbies/category/Art">Art</a></li>
+                                    <li><a href="/hobbies/category/Science">Science</a></li>
+                                </ul>
+                            </li>
+                            {{#if loggedIn}}
+                            <li><a href="/dashboard">My Hobbies</a></li>
+                            <li><a id="logout">Logout</a></li>
+                            {{else}}
+                            <li><a href="/login">Login</a></li>
+                            {{/if}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            {{{body}}}
+        </main>
+
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">Hobby Central &copy;
+                                
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.easing.1.3.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/main.js"></script>
+</body>
+
+</html>
