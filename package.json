@@ -1,7 +1,7 @@
 {
   "name": "hobby-central",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Deployed app on heroku: https://hobby-central.herokuapp.com/",
   "main": "server.js",
   "dependencies": {
     "abbrev": "^1.1.1",
